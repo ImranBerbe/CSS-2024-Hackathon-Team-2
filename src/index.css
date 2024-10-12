@@ -1,0 +1,77 @@
+.box{
+  width: 50%;
+  height: 40%;
+}
+
+.emotion{
+  font-size: 4rem;
+}
+
+*{
+  padding: 0;
+  box-sizing: border-box;
+  font-family:sans-serif;
+}
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background: rgba(216, 112, 147, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  
+}
+
+.navbar a{
+  position: relative;
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.482);
+  text-decoration: none;
+  font-weight:700;
+  margin-left: 40px;
+}
+
+.navbar a::before{
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: rgb(100, 190, 217);
+  transition: .3s;
+}
+
+.navbar a:hover::before{
+  width: 100% ;
+}
+.op-div{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.kartica{
+  z-index: 50;
+}
+
+.naslovabout{
+  text-align: center;
+  font-size: 40px;
+}
+
+.onama{
+  font-size: 20px;
+  font-family: sans-serif;
+  margin-left: 15px;
+  margin-right: 15px;
+  text-align: center;
+}
